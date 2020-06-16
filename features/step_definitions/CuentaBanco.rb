@@ -4,8 +4,7 @@ Given('deberia mostrar el estado de mi cuenta') do
   end
   
   Given('ingreso el moto {int} en el campo {string}') do |int, string|
-  # Given('ingreso el moto {float} en el campo {string}') do |float, string|
-    pending # Write code here that turns the phrase above into concrete actions
+    fill_in(string, :with => int)
   end
   
   When('preciono el boton {string}') do |string|

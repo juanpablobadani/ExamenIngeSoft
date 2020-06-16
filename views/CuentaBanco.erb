@@ -7,9 +7,10 @@
 </head>
 
 <body>
-    <h1>el balance de tu cuenta es: </h1>
-    Monto: <input type="number" name="monto">
-    <input type="button" onclick=" location.href='/'" value="Depositar" name="Depositar" /> 
-    <input type="button" onclick=" location.href='/'" value="Retirar" name="Retirar" /> 
-
+    <h1>el balance de tu cuenta es: <%=$balance%> </h1>
+    <form action ="/" method="post">
+        Monto: <input type="number" name="monto">
+        <input type="button" onclick=" location.href='/'" value="Depositar" name="Depositar" /> 
+        <input type="button" onclick=" location.href='/'" value="Retirar" name="Retirar" /> 
+    </form>
 </body>
